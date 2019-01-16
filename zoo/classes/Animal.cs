@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace zoo.class
+namespace zoo.classes
 {
  
     public abstract class Animal

@@ -4,7 +4,9 @@ using System.Text;
 
 namespace zoo.Interface
 {
-    interface Crawl
+   public interface Crawl
     {
+        string type { get; set; }
+        void run();
     }
 }
