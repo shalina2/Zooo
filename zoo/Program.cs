@@ -12,7 +12,7 @@ namespace zoo
 
             PolarBear polarbear = new PolarBear();
 
-            string sleep = polarbear.sleep("I usually dont sleep");
+            polarbear.Sleep();
             Console.WriteLine("yes i do sleep");
             polarbear.Breastfeed();
 

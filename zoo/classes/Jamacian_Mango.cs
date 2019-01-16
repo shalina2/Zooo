@@ -4,7 +4,7 @@ using System.Text;
 
 namespace zoo.classes
 {
-   public class Jamacian_Mango:Bird
+   public class JamacianMango:Bird
     {
         public string type { get => "Jamacianmango"; set => GetType(); }
 
