@@ -43,14 +43,7 @@ namespace zoo.classes
 
         }
 
-        public bool breastFeed()
-
-        {
-
-            return true;
-
-        }
-
+        
 
 
         
