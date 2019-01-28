@@ -1,37 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using zoo.Interface;
 
 namespace zoo.classes
 {
-    class penguin:Bird
+   public  class Owl :Bird,Hunt
     {
-        public string type { get => "penguin"; set => GetType(); }
-
-
-
+     
         public override void Eat()
 
         {
-
             Console.WriteLine("I eat fish");
 
         }
 
-      
-
-        public override bool fly()
+        public string Hunt(Edible food)
 
         {
-
-            return false;
-
+            return food.type; 
         }
-        public override bool swim()
+        public override void  Sleep()
 
         {
 
-            return false;
+            Console.WriteLine("I love to sleep");
 
         }
 

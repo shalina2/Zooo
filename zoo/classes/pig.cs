@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using zoo.Classes;
+using zoo.Interface;
 
 namespace zoo.classes
 {
-   Public class pig:mamal,Walk
+   public class Pig: Mammal,Edible
     {
 
-        public override string bornlive => "yes";
+        public override string color => "pink";
 
-
+        public override int legs => 4;
 
         public string type { get => "pig"; set => GetType(); }
-
-
 
         public override void Eat()
 
@@ -23,29 +23,39 @@ namespace zoo.classes
 
         }
 
-
-
         public override void Sleep()
 
         {
 
             Console.WriteLine("I can sleep all day everyday!");
 
-
-
         }
 
-        public override bool hair()
+        public override bool CanSwim()
+
+        {
+            return false;
+
+        }
+      
+        public void run()
 
         {
 
-            return true;
+            Console.WriteLine("I run very slow!");
 
         }
 
-        
+        public string Mimic(string movement)
+
+        {
+            return  "i am smart";
+
+        }
 
 
-        
+
+
+
     }
 }

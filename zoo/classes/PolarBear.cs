@@ -1,23 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using zoo.Classes;
+using zoo.Interface;
 
 namespace zoo.classes
 {
-   public  class PolarBear : Mamal,Walk
+   public  class PolarBear : Mammal,Hunt
     {
-        public override sleep()
+
+        public override string color => "white";
+
+        public override int legs => 4;
+
+
+        public override void Eat()
         {
-            Console.WriteLine("polarbear do sleep");
+            Console.WriteLine("I love eating");
         }
-        public string Breastfeed()
+        public string Hunt(Edible food)
         {
-            Console.WriteLine("female polarbear breastfeed");
+            return food.type;
 
         }
-        public string Walk(crawl place )
+        public override void Sleep()
         {
-            return place.type;
+            Console.WriteLine("I sleep on the ground.");
         }
+        public string Speak(string name)
+
+        {
+            return name;
+       }
+
+        
     }
 }

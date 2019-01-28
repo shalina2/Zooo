@@ -16,9 +16,6 @@ namespace zoo.classes
 
         public virtual bool fly()
         {
-
-
-
             return true;
 
         }

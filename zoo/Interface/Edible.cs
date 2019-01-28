@@ -4,8 +4,9 @@ using System.Text;
 
 namespace zoo.Interface
 {
-    public interface walk
+   public interface Edible
     {
-        string walk(Crawl leg);
+        string type { get; set; }
+        void run();
     }
 }
