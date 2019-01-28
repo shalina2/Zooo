@@ -4,34 +4,26 @@ using System.Text;
 
 namespace zoo.classes
 {
-    class penguin:Bird
+   public  class owl:Bird,Mimic
     {
-        public string type { get => "penguin"; set => GetType(); }
-
-
-
+     
         public override void Eat()
 
         {
-
             Console.WriteLine("I eat fish");
 
         }
 
-      
-
-        public override bool fly()
+        public string Mimic(string movement)
 
         {
-
-            return false;
-
+            return "I love singing";
         }
-        public override bool swim()
+        public override void  Sleep()
 
         {
 
-            return false;
+            Console.WriteLine("I love to sleep");
 
         }
 

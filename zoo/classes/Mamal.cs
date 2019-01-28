@@ -1,21 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+using zoo.classes;
 
 namespace zoo.Classes
 {
-    class Mamal : Animal
-{
-    public abstract string bornlive { get; }
-
-    public virtual bool hair()
+    public abstract class Mammal : Animal
 
     {
 
-        return true;
+        public abstract string color { get; }
+        public abstract int legs { get; }
+        public virtual bool CanSwim()
 
-    }
+        {
+            return true;
+        }
+
+        public bool GiveLiveBirth()
+
+        {
+            return true;
+
+        }
 
 }
 }

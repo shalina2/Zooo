@@ -4,16 +4,14 @@ using System.Text;
 
 namespace zoo.classes
 {
-   Public class pig:mamal,Walk
+   public class pig: Mamal,Edible,Mimic
     {
 
-        public override string bornlive => "yes";
+        public override string color => "pink";
 
-
+        public override int legs => 4;
 
         public string type { get => "pig"; set => GetType(); }
-
-
 
         public override void Eat()
 
@@ -23,29 +21,45 @@ namespace zoo.classes
 
         }
 
-
-
         public override void Sleep()
 
         {
 
             Console.WriteLine("I can sleep all day everyday!");
 
-
-
         }
 
-        public override bool hair()
+        public override bool CanSwim()
+
+        {
+            return false;
+
+        }
+        public bool ClimbTree()
 
         {
 
             return true;
 
         }
+        public void run()
 
-        
+        {
+
+            Console.WriteLine("We run fast!");
+
+        }
+
+        public string Mimic(string movement)
+
+        {
+            return $"I can mimic {movement}, i am smart";
+
+        }
 
 
-        
+
+
+
     }
 }
