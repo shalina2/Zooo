@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using zoo.Interface;
 
 namespace zoo.classes
 {
-   public  class owl:Bird,Mimic
+   public  class Owl :Bird,Hunt
     {
      
         public override void Eat()
@@ -14,10 +15,10 @@ namespace zoo.classes
 
         }
 
-        public string Mimic(string movement)
+        public string Hunt(Edible food)
 
         {
-            return "I love singing";
+            return food.type; 
         }
         public override void  Sleep()
 

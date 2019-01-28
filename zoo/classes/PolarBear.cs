@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using zoo.Classes;
+using zoo.Interface;
 
 namespace zoo.classes
 {
-   public  class PolarBear : Mamal,Hunt
+   public  class PolarBear : Mammal,Hunt
     {
 
         public override string color => "white";
@@ -12,7 +14,7 @@ namespace zoo.classes
         public override int legs => 4;
 
 
-        public override Eat()
+        public override void Eat()
         {
             Console.WriteLine("I love eating");
         }
@@ -30,5 +32,7 @@ namespace zoo.classes
         {
             return name;
        }
+
+        
     }
 }

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using zoo.Classes;
+using zoo.Interface;
 
 namespace zoo.classes
 {
-   public class pig: Mamal,Edible,Mimic
+   public class Pig: Mammal,Edible
     {
 
         public override string color => "pink";
@@ -35,25 +37,19 @@ namespace zoo.classes
             return false;
 
         }
-        public bool ClimbTree()
-
-        {
-
-            return true;
-
-        }
+      
         public void run()
 
         {
 
-            Console.WriteLine("We run fast!");
+            Console.WriteLine("I run very slow!");
 
         }
 
         public string Mimic(string movement)
 
         {
-            return $"I can mimic {movement}, i am smart";
+            return  "i am smart";
 
         }
 

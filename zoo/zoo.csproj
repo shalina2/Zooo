@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ZooTDD\" />
+    <Compile Remove="ZooTDD\**" />
+    <EmbeddedResource Remove="ZooTDD\**" />
+    <None Remove="ZooTDD\**" />
   </ItemGroup>
 
 </Project>
